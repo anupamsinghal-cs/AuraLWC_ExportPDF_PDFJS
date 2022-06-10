@@ -13,6 +13,8 @@ But in salesforce we rarely create our own table structures rather use the light
 
 - Implementation in LWC - In Progress
 
+- Refactoring the code - to do
+
 
 ## Libraries
 - [pdfjs](https://unpkg.com/jspdf@2.5.1/dist/jspdf.es.min.js) 
