@@ -23,7 +23,7 @@
             { label: 'Email', fieldName: 'Email', type: 'text' },
             { label: 'Phone', fieldName: 'Phone', type: 'text' }
         ];
-        var action = component.get('c.returnAccounts');
+        var action = component.get('c.returnContacts');
         action.setCallback(this, function (response) {
             component.set("v.contactColumns", columnsList);
             if (response.getReturnValue() != null) {

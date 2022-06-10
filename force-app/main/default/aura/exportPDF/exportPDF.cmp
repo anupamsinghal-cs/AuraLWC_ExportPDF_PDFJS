@@ -8,10 +8,19 @@
   <aura:attribute name="accountColumns" type="List" />
   <aura:attribute name="contactColumns" type="List" />
   <ltng:require scripts="{!$Resource.jspdf}" />
-  <ltng:require
-    scripts="{!$Resource.jspdfAutotable}"
-    afterScriptsLoaded="{!c.loadRecords}"
-  />
+  <ltng:require scripts="{!$Resource.jspdfAutotable}" afterScriptsLoaded="{!c.loadRecords}" />
+  <div class="slds-grid slds-gutters">
+    <div class="slds-col slds-size_4-of-4">
+      <div class="slds-align_absolute-center" style="margin: 1em">
+        <lightning:button
+          variant="brand"
+          label="Download PDF"
+          title="Download PDF"
+          onclick="{! c.generatePdf }"
+        />
+      </div>
+    </div>
+  </div>
   <div class="slds-grid slds-gutters">
     <div class="slds-col slds-size_2-of-4">
       <lightning:datatable
@@ -22,7 +31,7 @@
       />
     </div>
     <div class="slds-col slds-size_2-of-4">
-        <lightning:datatable
+      <lightning:datatable
         data="{! v.contacts }"
         columns="{! v.contactColumns }"
         keyField="id"
