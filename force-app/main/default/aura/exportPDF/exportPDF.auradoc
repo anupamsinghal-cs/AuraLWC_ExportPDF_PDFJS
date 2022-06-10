@@ -1,6 +1,6 @@
 <aura:documentation>
 	<aura:description>Documentation</aura:description>
-	<aura:example name="ExampleName" ref="exampleComponentName" label="Label">
-		Example Description
+	<aura:example name="Export To PDF" ref="exportPDF" label="Label">
+		This component demonstrates how to export PDF with apex data, as an added bonus it shows how to export 2 tables side by side.
 	</aura:example>
 </aura:documentation>
