@@ -6,5 +6,5 @@ But in salesforce we rarely create our own table structures rather use the light
 
 ## Libraries used
 
-- [pdfjs](https://unpkg.com/jspdf@2.5.1/dist/jspdf.es.min.js)
+- [pdfjs](https://unpkg.com/jspdf@2.5.1/dist/jspdf.es.min.js) Use the js in static resources the code in the link is buggy and does not get loaded as a resource
 - [pdfjs-Autotable plugin for jspdf](https://unpkg.com/jspdf-autotable@3.5.25/dist/jspdf.plugin.autotable.js)
