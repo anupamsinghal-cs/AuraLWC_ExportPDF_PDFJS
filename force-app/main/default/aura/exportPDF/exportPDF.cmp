@@ -1,0 +1,33 @@
+<aura:component
+  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+  controller="ReturnAccountAndContacts"
+  access="global"
+>
+  <aura:attribute name="accounts" type="List" />
+  <aura:attribute name="contacts" type="List" />
+  <aura:attribute name="accountColumns" type="List" />
+  <aura:attribute name="contactColumns" type="List" />
+  <ltng:require scripts="{!$Resource.jspdf}" />
+  <ltng:require
+    scripts="{!$Resource.jspdfAutotable}"
+    afterScriptsLoaded="{!c.loadRecords}"
+  />
+  <div class="slds-grid slds-gutters">
+    <div class="slds-col slds-size_2-of-4">
+      <lightning:datatable
+        data="{! v.accounts }"
+        columns="{! v.accountColumns }"
+        keyField="id"
+        hideCheckboxColumn="true"
+      />
+    </div>
+    <div class="slds-col slds-size_2-of-4">
+        <lightning:datatable
+        data="{! v.contacts }"
+        columns="{! v.contactColumns }"
+        keyField="id"
+        hideCheckboxColumn="true"
+      />
+    </div>
+  </div>
+</aura:component>
