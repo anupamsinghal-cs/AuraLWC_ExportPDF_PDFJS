@@ -16,3 +16,9 @@ The `sfdx-project.json` file contains useful configuration information for your 
 - [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
 - [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
 - [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+
+## About this project
+
+I wanted to create ths project since there is minimal to none documentation on how to export Tables or 2 tables side by side from Aura component using pdfJS.
+The only documentation I could find was exporting html tag tables to pdf using the html_to_pdf method in pdfJS
+But in salesforce we rarely create our own table structures rather use the lightning:datatable to render perfect tables.
