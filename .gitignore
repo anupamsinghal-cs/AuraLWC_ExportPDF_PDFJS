@@ -2,3 +2,5 @@
 **/tools/
 **/typings/
 **/orgs/
+.sf/
+**/.sfdx/sfdx-config.json
